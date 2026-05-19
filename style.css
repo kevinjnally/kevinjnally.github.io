@@ -383,6 +383,121 @@ h2 {
 }
 
 /* ========================================= */
+/* INDIVIDUAL PROJECT PAGE LAYOUT            */
+/* ========================================= */
+.project-hero {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.project-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-hero-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.project-hero-title h2 {
+    font-size: 3rem;
+    border-bottom: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.project-hero-title p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.case-study-grid {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Left Sidebar for Quick Facts */
+.project-meta {
+    flex: 1;
+    position: sticky;
+    top: 40px;
+}
+
+.meta-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+.meta-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.meta-item p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Right Side for the Deep Dive */
+.project-content {
+    flex: 2.5;
+}
+
+.project-content h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.project-content p {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+.project-content-image {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.project-content-image img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.project-content-image .caption {
+    margin-top: 10px;
+}
+
+/* Mobile Adjustments for Project Pages */
+@media (max-width: 768px) {
+    .case-study-grid { flex-direction: column; gap: 40px; }
+    .project-meta { position: relative; top: 0; width: 100%; display: flex; flex-wrap: wrap; gap: 20px; }
+    .meta-item { flex: 1 1 40%; border-bottom: none; padding-bottom: 0; }
+    .project-hero-title h2 { font-size: 2rem; }
+}
+
+/* ========================================= */
 /* FOOTER                                    */
 /* ========================================= */
 footer {
