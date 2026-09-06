@@ -585,6 +585,22 @@ footer {
     .about-grid { flex-direction: column; }
     .edu-header { flex-direction: column; align-items: flex-start; gap: 5px; }
     
+    /* Editorial Hero Mobile */
+    .hero-minimal {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 20px;
+    }
+    .hero-roles {
+        border-left: none;
+        border-top: 3px solid #000;
+        padding-left: 0;
+        padding-top: 25px;
+    }
+    .hero-image-wrapper {
+        justify-content: center;
+    }
+    
     /* Updates Page */
     .milestone { flex-direction: column; gap: 20px; }
     .milestone-visual { width: 80%; margin: 0 auto; }
